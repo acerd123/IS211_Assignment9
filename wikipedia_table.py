@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 url = 'https://en.wikipedia.org/wiki/List_of_Super_Bowl_champions'
 
 def clean_text(text):
-    """Clean the text by removing footnotes and unwanted characters."""
+    
     return text.split('[')[0].strip()  
 
 def scrape_super_bowl_champions():
